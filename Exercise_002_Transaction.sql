@@ -1,0 +1,10 @@
+-- 002 Transaction Exercise
+--
+-- Create a Stored procedure "uspPurchaseOrderReceived" that takes 1 parameter @PurchseOrderId
+--
+-- The procedure should 
+-- 1) Update the status of the Purchase Order to "4" (which Im assuming is received)
+-- 2) Increate the quantity in Production.ProductInventory by the amount for each Product in the Purchase Order
+-- 3) Update the ModifiedDate in Production.ProductInventory & on Purchasing.[PurchaseOrderHeader]
+--
+-- That should all be in a transaction, so if anything goes wrong the whole transaction is rolled back
